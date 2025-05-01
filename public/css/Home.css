@@ -1,0 +1,88 @@
+/* Home styling */
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 100px;
+    background-color: #f9f9f9;
+    min-height: calc(100vh - 80px);
+}
+
+.text-content {
+    flex: 1;
+    max-width: 600px;
+}
+
+.text-content h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.text-content p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.discover-btn {
+    display: inline-block;
+    background-color: #860000;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.discover-btn:hover {
+    background-color: #6b0000;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cat {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cat img {
+    max-width: 100%;
+    height: auto;
+    max-height: 600px;
+}
+
+/* Responsive design */
+@media (max-width: 992px) {
+    .content {
+        flex-direction: column;
+        padding: 30px 50px;
+        text-align: center;
+    }
+
+    .text-content {
+        margin-bottom: 40px;
+    }
+
+    .cat {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .content {
+        padding: 20px;
+    }
+
+    .text-content h1 {
+        font-size: 36px;
+    }
+
+    .text-content p {
+        font-size: 16px;
+    }
+}

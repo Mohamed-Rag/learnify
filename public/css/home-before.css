@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #f5f5f5;
+    background-image: url('../images/background.jpg'); /* Add a background image if you have one */
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    color: white;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+.text-content {
+    max-width: 500px;
+}
+.text-content h1 {
+    font-size: 35px;
+}
+.text-content p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+.discover-btn {
+    display: inline-block;
+    background-color: #860000;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.discover-btn:hover {
+    background-color: #6a0000;
+    color: white;
+    text-decoration: none;
+}
+.cat img {
+    width: 300px;
+    margin-right: 100px;
+    margin-top: 100px;
+}
+
+/* Add responsive design */
+@media (max-width: 992px) {
+    .content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .cat img {
+        margin-right: 0;
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 576px) {
+    .text-content h1 {
+        font-size: 28px;
+    }
+    .cat img {
+        width: 250px;
+    }
+}

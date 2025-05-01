@@ -1,0 +1,173 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 24px;
+    background-color: #2d2d2d62;
+    backdrop-filter: blur(5px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+.navbar .logo img {
+    height: 35px;
+    margin-right: 10px;
+}
+.navbar .menu {
+    display: flex;
+    gap: 32px;
+    margin-right: 290px;
+    margin-top: 5px;
+}
+.navbar .menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+.navbar .menu a:hover {
+    color: #888;
+}
+.navbar .right-section {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.search-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.search {
+    padding: 8px 12px 8px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 14px;
+    width: 400px;
+    transition: background-color 0.2s;
+}
+.search:focus {
+    background-color: #262626;
+    outline: none;
+}
+.search::placeholder {
+    color: #646464;
+}
+.subscribe-btn {
+    background-color: #86000000;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    border: 2px solid ;
+}
+.subscribe-btn:hover {
+    background-color: #860000;
+    border: 1px solid #860000;
+    transition: background-color 0.2s;
+}
+.nav-button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.login-btn {
+    background-color: #86000000;
+    color: white;
+}
+
+.login-btn:hover {
+    background-color: #6a0000;
+}
+.signup-btn {
+    background-color: #860000;
+    color: white;
+}
+
+.signup-btn:hover {
+    background-color: #6a0000;
+}
+
+.support {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+}
+
+.support button {
+    background-color: #860000;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.support button i {
+    font-size: 18px;
+}
+
+/* Add responsive design */
+@media (max-width: 1200px) {
+    .navbar .menu {
+        margin-right: 100px;
+    }
+    .search {
+        width: 300px;
+    }
+}
+
+@media (max-width: 992px) {
+    .navbar .menu {
+        margin-right: 50px;
+        gap: 20px;
+    }
+    .navbar .menu a {
+        font-size: 18px;
+    }
+    .search {
+        width: 200px;
+    }
+    .nav-button {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .navbar .menu {
+        margin-right: 0;
+    }
+    .right-section {
+        width: 100%;
+        justify-content: center;
+    }
+}
